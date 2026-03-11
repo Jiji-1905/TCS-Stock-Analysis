@@ -15,7 +15,7 @@
 ![GitHub](https://img.shields.io/badge/GitHub-Repository-black)
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
 
-📌 Project Overview
+📌 **Project Overview**
 
 This project focuses on analyzing historical stock market data of Tata Consultancy Services (TCS) and building machine learning models to predict future stock closing prices.
 
