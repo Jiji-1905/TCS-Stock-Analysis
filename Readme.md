@@ -15,7 +15,7 @@
 ![GitHub](https://img.shields.io/badge/GitHub-Repository-black)
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
 
-📌 Project Overview
+📌 **Project Overview**
 
 Stock market analysis helps investors understand market behavior and make informed decisions.
 This project analyzes historical stock price data of Tata Consultancy Services (TCS) and builds machine learning models to predict future closing prices.
@@ -36,7 +36,7 @@ Model evaluation and prediction
 
 The analysis was performed using Python in Google Colab and the final trained model was saved using Pickle.
 
-🎯 Project Objectives
+🎯 **Project Objectives**
 
 Analyze historical stock price trends
 
@@ -48,7 +48,7 @@ Build machine learning models for prediction
 
 Evaluate model performance using statistical metrics
 
-🛠 Tools & Technologies
+🛠 **Tools & Technologies**
 Category	Tools
 Programming	Python
 Environment	Google Colab
@@ -57,7 +57,8 @@ Visualization	Matplotlib, Seaborn
 Machine Learning	Scikit-learn
 Model Saving	Pickle
 Version Control	GitHub
-📊 Project Workflow
+
+📊 **Project Workflow**
 
 1️⃣ Data Collection
 2️⃣ Data Cleaning
@@ -67,7 +68,7 @@ Version Control	GitHub
 6️⃣ Model Evaluation
 7️⃣ Prediction Visualization
 
-📂 Project Structure
+📂 **Project Structure**
 tcs-stock-analysis
 │
 ├── dataset
@@ -85,7 +86,8 @@ tcs-stock-analysis
 │   └── TCS_Stock_Predictor.pkl
 │
 └── README.md
-📈 Key Visualizations
+
+📈 **Key Visualizations**
 
 The project includes the following visualizations:
 
@@ -97,7 +99,7 @@ Actual vs predicted stock prices
 
 These visualizations help identify market trends and model accuracy.
 
-🤖 Machine Learning Models
+🤖 **Machine Learning Models**
 
 Two models were used:
 
@@ -111,7 +113,7 @@ Ensemble learning model
 
 Handles nonlinear patterns in stock data
 
-📊 Model Evaluation Metrics
+📊 **Model Evaluation Metrics**
 
 Mean Squared Error (MSE)
 
@@ -119,7 +121,7 @@ R² Score
 
 These metrics help measure prediction accuracy.
 
-🚀 Future Improvements
+🚀 **Future Improvements**
 
 Implement LSTM deep learning models
 
@@ -129,7 +131,7 @@ Build an interactive dashboard using Power BI or Tableau
 
 Deploy model using Streamlit
 
-👨‍💻 Author
+👨‍💻 **Author**
 
 Jiji Babu
 Data Analyst
@@ -145,3 +147,4 @@ Data Analysis
 Machine Learning
 
 Data Visualization
+Google colab : https://colab.research.google.com/drive/1IGJSx6yzVZ6eJg4aPQzp4iaTXWLU5rdJ?usp=sharing
