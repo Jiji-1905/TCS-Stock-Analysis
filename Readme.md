@@ -1,4 +1,4 @@
-📈 TCS Stock Price Analysis and Prediction using Machine Learning
+**📈 TCS Stock Price Analysis and Prediction using Machine Learning**
 
 ![Python](https://img.shields.io/badge/Python-3.12-blue)
 ![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-green)
