@@ -15,26 +15,23 @@
 ![GitHub](https://img.shields.io/badge/GitHub-Repository-black)
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
 
-📌 **Project Overview**
+📌 Project Overview
 
-Stock market analysis helps investors understand market behavior and make informed decisions.
-This project analyzes historical stock price data of Tata Consultancy Services (TCS) and builds machine learning models to predict future closing prices.
+This project focuses on analyzing historical stock market data of Tata Consultancy Services (TCS) and building machine learning models to predict future stock closing prices.
 
-The project includes:
+The project demonstrates the complete Data Analyst workflow, including:
 
-Data cleaning and preprocessing
+Data Cleaning
 
 Exploratory Data Analysis (EDA)
 
-Feature engineering
+Feature Engineering
 
-Visualization of stock trends
+Data Visualization
 
-Machine learning model development
+Machine Learning Modeling
 
-Model evaluation and prediction
-
-The analysis was performed using Python in Google Colab and the final trained model was saved using Pickle.
+Model Evaluation
 
 🎯 **Project Objectives**
 
