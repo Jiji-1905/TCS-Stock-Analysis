@@ -1,147 +1,231 @@
-**📈 TCS Stock Price Analysis & Prediction using Machine Learning**
+# 📈 TCS Stock Price Analysis & Prediction
 
 ![Python](https://img.shields.io/badge/Python-3.12-blue)
 ![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-green)
 ![NumPy](https://img.shields.io/badge/NumPy-Scientific%20Computing-orange)
-![Scikit-learn](https://img.shields.io/badge/Scikit--Learn-Machine%20Learning-yellow)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-Data%20Visualization-lightgrey)
-![Seaborn](https://img.shields.io/badge/Seaborn-EDA-blueviolet)
-![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Predictive%20Modeling-red)
-![Time Series](https://img.shields.io/badge/Time%20Series-Analysis-purple)
-![Feature Engineering](https://img.shields.io/badge/Feature-Engineering-ff69b4)
-![Data Cleaning](https://img.shields.io/badge/Data-Cleaning-yellowgreen)
-![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange)
-![Google Colab](https://img.shields.io/badge/Google-Colab-yellow)
-![GitHub](https://img.shields.io/badge/GitHub-Repository-black)
-![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-Data%20Visualization-red)
+![Seaborn](https://img.shields.io/badge/Seaborn-Statistical%20Visualization-purple)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-Machine%20Learning-yellow)
+![RandomForest](https://img.shields.io/badge/Model-Random%20Forest-darkgreen)
+![LinearRegression](https://img.shields.io/badge/Model-Linear%20Regression-lightgrey)
+![Status](https://img.shields.io/badge/Project-Completed-success)
 
-📌 **Project Overview**
+---
 
-This project focuses on analyzing historical stock market data of Tata Consultancy Services (TCS) and building machine learning models to predict future stock closing prices.
+# 📌 Project Overview
 
-The project demonstrates the complete Data Analyst workflow, including:
+This project analyzes historical stock price data of **Tata Consultancy Services (TCS)** and builds machine learning models to predict stock closing prices using historical market indicators.
 
-Data Cleaning
+The project demonstrates a complete **Data Analyst workflow**, including:
 
-Exploratory Data Analysis (EDA)
+- Data Cleaning
+- Exploratory Data Analysis (EDA)
+- Feature Engineering
+- Data Visualization
+- Machine Learning Modeling
+- Model Evaluation
+- Model Saving for Future Use
 
-Feature Engineering
+The goal is to identify patterns in stock price movements and build predictive models based on historical stock data.
 
-Data Visualization
+---
 
-Machine Learning Modeling
+# 📊 Dataset Information
 
-Model Evaluation
+The dataset contains historical stock price data with the following columns:
 
-🎯 **Project Objectives**
+| Column | Description |
+|------|-------------|
+| Date | Trading date |
+| Open | Opening stock price |
+| High | Highest stock price |
+| Low | Lowest stock price |
+| Close | Closing stock price |
+| Volume | Trading volume |
 
-Analyze historical stock price trends
+---
 
-Perform exploratory data analysis
+# ⚙️ Technologies Used
 
-Identify important stock indicators
+| Tool | Purpose |
+|-----|--------|
+| Python | Programming Language |
+| Pandas | Data manipulation |
+| NumPy | Numerical computing |
+| Matplotlib | Data visualization |
+| Seaborn | Statistical visualization |
+| Scikit-Learn | Machine learning models |
 
-Build machine learning models for prediction
+---
 
-Evaluate model performance using statistical metrics
+# 🔎 Data Preprocessing
 
-🛠 **Tools & Technologies**
-Category	Tools
-Programming	Python
-Environment	Google Colab
-Data Processing	Pandas, NumPy
-Visualization	Matplotlib, Seaborn
-Machine Learning	Scikit-learn
-Model Saving	Pickle
-Version Control	GitHub
+Steps performed in preprocessing:
 
-📊 **Project Workflow**
+- Converted **Date column to datetime format**
+- Sorted dataset by date
+- Converted numerical columns to numeric format
+- Handled missing values using **forward fill method**
+- Checked dataset statistics and structure
 
-1️⃣ Data Collection
-2️⃣ Data Cleaning
-3️⃣ Exploratory Data Analysis
-4️⃣ Feature Engineering
-5️⃣ Machine Learning Model Training
-6️⃣ Model Evaluation
-7️⃣ Prediction Visualization
+---
 
-📂 **Project Structure**
-tcs-stock-analysis
+# 📊 Exploratory Data Analysis
+
+## Stock Closing Price Trend
+
+This visualization shows the trend of **TCS closing stock price over time**.
+
+![Close Price](outputs/close_price_over_time.png)
+
+---
+
+## Moving Average Analysis
+
+Two moving averages were calculated:
+
+- **50-Day Moving Average**
+- **200-Day Moving Average**
+
+These indicators help identify **short-term and long-term market trends**.
+
+![Moving Average](outputs/moving_average.png)
+
+---
+
+# 🧠 Feature Engineering
+
+New features extracted from the date column:
+
+| Feature | Description |
+|------|-------------|
+| Year | Trading year |
+| Month | Trading month |
+| Day | Day of month |
+| Day_of_Week | Day of the week |
+| Prev_Close | Previous day's closing price |
+
+These features help machine learning models understand **temporal stock market patterns**.
+
+---
+
+# 🤖 Machine Learning Models
+
+Two machine learning models were implemented:
+
+## 1. Random Forest Regressor
+
+Random Forest is an ensemble learning algorithm that builds multiple decision trees and combines them to improve prediction accuracy.
+
+Advantages:
+
+- Handles complex patterns
+- Reduces overfitting
+- Works well with financial data
+
+---
+
+## 2. Linear Regression
+
+Linear Regression models the linear relationship between independent variables and the target variable.
+
+Used to:
+
+- Compare performance with Random Forest
+- Provide a baseline model
+
+---
+
+# 📉 Model Evaluation
+
+Model performance was evaluated using:
+
+| Metric | Description |
+|------|-------------|
+| Mean Squared Error (MSE) | Measures prediction error |
+| R² Score | Measures model performance |
+
+Higher **R² score** indicates better prediction performance.
+
+---
+
+# 📊 Prediction Visualization
+
+The following chart compares **Actual vs Predicted stock prices**.
+
+![Prediction](outputs/actual-vs_predicted_values.png)
+
+---
+
+# 💾 Model Saving
+
+The trained model is saved using **Pickle** for future predictions.
+
+```
+TCS_Stock_Predictor.pkl
+```
+
+This allows the model to be reused without retraining.
+
+---
+
+# 📁 Project Structure
+
+```
+tcs_stock_analysis
 │
-├── dataset
+├── csv_files
+│   ├── TCS_stock_history.xlsx
 │   └── TCS_stock_history.csv
 │
 ├── outputs
 │   ├── close_price_over_time.png
 │   ├── moving_average.png
-│   └── actual_vs_predicted.png
+│   └── actual-vs_predicted_values.png
 │
-├── notebook
-│   └── TCS_Stock_Analysis.ipynb
-│
-├── model
-│   └── TCS_Stock_Predictor.pkl
-│
+├── TCS_Stock_Predictor.pkl
+├── tcs_stock_analysis.ipynb
 └── README.md
+```
 
-📈 **Key Visualizations**
+---
 
-The project includes the following visualizations:
+# 🚀 Key Insights
 
-Stock closing price trend over time
+Important findings from the analysis:
 
-Moving average analysis (50-Day and 200-Day)
+- Stock prices follow clear long-term trends.
+- Moving averages help identify market momentum.
+- Previous closing price strongly influences future price.
+- Random Forest model captures nonlinear patterns effectively.
 
-Actual vs predicted stock prices
+---
+# Google Colab : https://colab.research.google.com/drive/1IGJSx6yzVZ6eJg4aPQzp4iaTXWLU5rdJ?usp=sharing
 
-These visualizations help identify market trends and model accuracy.
+# 📌 Future Improvements
 
-🤖 **Machine Learning Models**
+Possible enhancements for this project:
 
-Two models were used:
+- Add **LSTM deep learning model for time series prediction**
+- Include **technical indicators (RSI, MACD, Bollinger Bands)**
+- Build an **interactive dashboard using Streamlit or Power BI**
+- Deploy the model for real-time prediction
 
-Linear Regression
+---
 
-Simple baseline prediction model
+# 👨‍💻 Author
 
-Random Forest Regressor
+**Jiji Babu**
 
-Ensemble learning model
-
-Handles nonlinear patterns in stock data
-
-📊 **Model Evaluation Metrics**
-
-Mean Squared Error (MSE)
-
-R² Score
-
-These metrics help measure prediction accuracy.
-
-🚀 **Future Improvements**
-
-Implement LSTM deep learning models
-
-Add technical indicators (RSI, MACD)
-
-Build an interactive dashboard using Power BI or Tableau
-
-Deploy model using Streamlit
-
-👨‍💻 **Author**
-
-Jiji Babu
-Data Analyst
+Aspiring Data Analyst
 
 Skills:
 
-Python
+- Python
+- SQL
+- Data Analysis
+- Machine Learning
+- Data Visualization
 
-SQL
+---
 
-Data Analysis
-
-Machine Learning
-
-Data Visualization
-Google colab : https://colab.research.google.com/drive/1IGJSx6yzVZ6eJg4aPQzp4iaTXWLU5rdJ?usp=sharing
